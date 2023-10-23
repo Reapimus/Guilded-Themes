@@ -1,0 +1,204 @@
+body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-container, .InsertGifPicker-container {
+    background-image: var(--theme-background-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.ProfileHoverCardOverlay-container, .TeamBotsManagerOverlay-container {
+    background: linear-gradient(var(--popout-background-transparency), var(--popout-background-transparency)), var(--theme-background-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.SettingsOverlay-container:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: var(--theme-transparency) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    top: 0;
+    pointer-events: none;
+}
+
+.ChannelWrapper-container, .NavV4Footer-footer-content, .NavV4Sidebar-container, .GroupSelector-container, .TeamNavHeader-container,
+.LayeredPageContent-content, .MediaInfoPane-container, .WebAppSidebar-portal:has(.ChatChannelList-container), .NavV4FooterGlobalContextDisplay-container,
+.UserProfileV3-content > .ContentLoader-container, .ScreenHeader-container, .WebAppSidebar-portal:has(.NavV4SectionSidebar-container),
+.ExplorePageV2-content-container, .TeamPageNavV3-nav-contents {
+    background-color: var(--theme-transparency) !important;
+}
+
+.ReactionPicker-navbar, .ReactionPicker-content, .ReactionPickerFooter-container, .InsertGifPicker-navbar, .InsertGifPicker-content {
+    background-color: var(--popout-background-transparency) !important;
+}
+
+.SidebarWrapper-container, .WebAppSidebar-container, .TeamPageNavV3-container, .TeamPageV2-nav, .NavV4Footer-right, .NavV4SidebarFooter-container,
+.ChannelWrapper-container .ScreenHeader-container, .OptionsMenuPageWrapper-container, .OptionsMenu-options-control, .OptionsMenu-option-content, .NavV4SectionSidebar-container,
+.NavV4FooterGlobalContextDisplay-teams-wrapper, .ChatChannelList-container, .TeamPageV2-container .ScreenHeader-container, .ReGuildedEnhancementPage-screen-header,
+.TeamNavMenu-container, .TeamThreadPostPanel-container, .TeamBotsManagerSidebar-container, .BotInfoHeaderBanner-container {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.ScreenHeader-container, .TeamOverviewBanner-container, .OptionsMenuPageWrapper-container .FormSection-container, .OptionsMenuPageWrapper-container .FormSection-row,
+.SettingsMenu-container .ItemManagerListItem-container, .SettingsMenu-container .ItemManagerHeader-container, .ReactionPickerFooter-container,
+.ForumThreads-container .DraftInputWithTitleV2-input, .TeamThreadReplyCreator-creator-image, .TeamThreadReplyCreator-placeholder,
+.ForumThreads-container .SlateToolbarStrip, .ForumThreads-container .SlateToolbarStrip-iconGroup {
+    border: none !important;
+}
+
+.ChatChannelListItem-container {
+    background-color: var(--dm-channel-transparency);
+    backdrop-filter: blur(8px);
+}
+
+.ChatChannelListItem-container:not(.ChatChannelListItem-container-selected):hover {
+    background-color: var(--dm-channel-hover-transparency);
+}
+
+.ChatChannelListItem-container-selected {
+    background-color: var(--dm-channel-active-transparency);
+}
+
+.ChatChannelListItem-container:hover .ChatChannelListItem-remove-icon {
+    border-radius: 4px;
+    background-color: firebrick !important;
+}
+
+.NavV4Sidebar-container {
+    width: 0px;
+    transition: width cubic-bezier(0.4, 0.09, 0.04, 1) 280ms;
+}
+
+.NavV4Sidebar-container:has(~ .WebAppV2-container-menu-activated) {
+    width: var(--minimal-nav-width) !important;
+}
+
+.TeamNavHeader-container .TeamBanner-container {
+    height: 140px;
+    background: black !important;
+    filter: none;
+}
+
+.TeamNavHeader-container {
+    border-radius: 0 0 8px 8px;
+}
+
+.TeamNavHeader-container .TeamBanner-container .StretchBackground-container {
+    mask-image: unset;
+    -webkit-mask-image: unset;
+}
+
+.TeamNavHeader-container .TeamBanner-container .StretchBackground-container:after {
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.ChatV2Message-container:not(.ChatV2Message-container-editing) {
+    border-radius: 6px;
+}
+
+.ChatChannelInput-editor .ContextMenuTrigger-container:after, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper:after,
+.NavV4Sidebar-shadow {
+    display: none;
+}
+
+.TeamThread-content .TeamThreadReplyCreator-container {
+    backdrop-filter: blur(6px);
+}
+
+.ChatChannelInput-editor, .ChatChannelInputStatusBar-container, .ForumThreads-container .DraftInputWithTitleV2-title-wrapper,
+.ForumThreads-container .TeamPostRow-container, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper,
+.ForumThreads-container .Editor-container {
+    background-color: var(--message-box-transparency) !important;
+    backdrop-filter: blur(6px);
+}
+
+.TeamPageSidebarMembersV2-container {
+    background-color: var(--member-list-transparency) !important;
+    backdrop-filter: blur(6px);
+}
+
+.ReactionBadge-container-content {
+    background-color: var(--reaction-transparency) !important;
+    backdrop-filter: blur(4px);
+}
+
+.ModalWrapper-container.Overlay-container {
+    backdrop-filter: blur(4px);
+}
+
+.DesktopOptionsControlOptionHeader-header-text, .SettingsMenu-container .FormConfirmButtonV2-container, .SettingsMenu-container .OptionsMenu-cancel {
+    position: relative;
+}
+
+.UserProfileV3-content .UserProfileBackground-image, .TeamOverviewBanner-banner, .BotInfoHeaderBanner-image {
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.UserProfileNavHeader-container {
+    box-shadow: none;
+}
+
+.CarouselList-list-wrapper {
+    transition: -webkit-mask-image linear .15s, webkit-mask linear .15s;
+}
+
+.CarouselList-container .CarouselList-blur-light {
+    display: none;
+}
+
+.CarouselList-container:has(.CarouselList-controls-right) .CarouselList-list-wrapper {
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%) !important;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+.CarouselList-container:has(.CarouselList-controls-left) .CarouselList-list-wrapper {
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
+}
+
+.CarouselList-container:has(.CarouselList-controls-left):has(.CarouselList-controls-right) .CarouselList-list-wrapper {
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%) !important;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+.ChatV2MessageHeader-avatar, .PlayerCardProfilePicture-avatar, .UserProfilePictureControl-picture, .LoggedInUserAvatar-picture,
+.PlayerCardProfilePicture-container .ProgressiveLoadedImage-container, .ChatV2MessageHeader-avatar-wrapper {
+    border-radius: var(--avatar-roundness) !important;
+}
+
+.ChatChannelMessagesList-container:hover::-webkit-scrollbar-thumb, .TeamNavMenu-wrapper-thick-scrollbar:hover::-webkit-scrollbar-thumb,
+.PageSidebarWrapper-container:hover::-webkit-scrollbar-thumb, .StatusContext-container::-webkit-scrollbar-thumb,
+.PermissionSettingsEditorWrapper-container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color) !important;
+}
+
+.ReactionBadge-container-active .ReactionBadge-container-content {
+    background-color: var(--reaction-active-transparency) !important;
+}
+
+.TeamChannelItemContents-container-unread:before {
+    background-color: var(--primary-color);
+}
+
+.TeamChannelItemContents-container-unread .TeamChannelItemContents-name {
+    color: var(--primary-color);
+}
+
+.TeamPageSidebarMembersV2-container .ChannelListHeader-container-type-default .ChannelListHeader-text {
+    color: var(--member-list-role-color);
+}
+
+.NavV4TeamSelectorTeamList-container .NavV4SelectorRow-container {
+    border-radius: 4px;
+}
+
+.NavV4TeamSelectorTeamList-container .NavV4SelectorRow-container:hover {
+    backdrop-filter: blur(6px);
+}
