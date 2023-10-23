@@ -36,7 +36,8 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 .SidebarWrapper-container, .WebAppSidebar-container, .TeamPageNavV3-container, .TeamPageV2-nav, .NavV4Footer-right, .NavV4SidebarFooter-container,
 .ChannelWrapper-container .ScreenHeader-container, .OptionsMenuPageWrapper-container, .OptionsMenu-options-control, .OptionsMenu-option-content, .NavV4SectionSidebar-container,
 .NavV4FooterGlobalContextDisplay-teams-wrapper, .ChatChannelList-container, .TeamPageV2-container .ScreenHeader-container, .ReGuildedEnhancementPage-screen-header,
-.TeamNavMenu-container, .TeamThreadPostPanel-container, .TeamBotsManagerSidebar-container, .BotInfoHeaderBanner-container {
+.TeamNavMenu-container, .TeamThreadPostPanel-container, .TeamBotsManagerSidebar-container, .BotInfoHeaderBanner-container, .FullSizedCalendar-week,
+.DocSummaryInfo-container {
     background-color: transparent !important;
     background: transparent !important;
 }
@@ -44,7 +45,7 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 .ScreenHeader-container, .TeamOverviewBanner-container, .OptionsMenuPageWrapper-container .FormSection-container, .OptionsMenuPageWrapper-container .FormSection-row,
 .SettingsMenu-container .ItemManagerListItem-container, .SettingsMenu-container .ItemManagerHeader-container, .ReactionPickerFooter-container,
 .ForumThreads-container .DraftInputWithTitleV2-input, .TeamThreadReplyCreator-creator-image, .TeamThreadReplyCreator-placeholder,
-.Editor-container .SlateToolbarStrip, .Editor-container .SlateToolbarStrip-iconGroup {
+.Editor-container .SlateToolbarStrip, .Editor-container .SlateToolbarStrip-iconGroup, .PostMetadata-reply-info, .PostMetadata-creation-info {
     border: none !important;
 }
 
@@ -118,14 +119,33 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 }
 
 .ChatChannelInput-editor, .ChatChannelInputStatusBar-container, .ForumThreads-container .DraftInputWithTitleV2-title-wrapper,
-.ForumThreads-container .TeamPostRow-container, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper, .Editor-container {
+.TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper, .Editor-container, .TeamThreadPostPanelDisplay-container-reply,
+.TeamThreadPostPanelDisplay-container, .ForumThreads-container .TeamPostRow-container, .MediaDisplayItemV3-container,
+.ReplyPanel-container-viewing, .DocDisplayItem-container {
     background-color: var(--message-box-transparency) !important;
     backdrop-filter: blur(6px);
+}
+
+.DocDisplayItem-container:after {
+    border: none;
 }
 
 .TeamPageSidebarMembersV2-container {
     background-color: var(--member-list-transparency) !important;
     backdrop-filter: blur(6px);
+}
+
+.FullSizedCalendarDay-container {
+    background-color: var(--message-box-transparency) !important;
+    backdrop-filter: blur(6px);
+    border-radius: 6px;
+    transform: scale(97%);
+    border: none !important;
+    transition: filter linear .15s;
+}
+
+.FullSizedCalendarDay-container:hover {
+    filter: brightness(1.1);
 }
 
 .ReactionBadge-container-content {
@@ -180,7 +200,8 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 
 .ChatChannelMessagesList-container:hover::-webkit-scrollbar-thumb, .TeamNavMenu-wrapper-thick-scrollbar:hover::-webkit-scrollbar-thumb,
 .PageSidebarWrapper-container:hover::-webkit-scrollbar-thumb, .StatusContext-container::-webkit-scrollbar-thumb,
-.PermissionSettingsEditorWrapper-container::-webkit-scrollbar-thumb {
+.PermissionSettingsEditorWrapper-container::-webkit-scrollbar-thumb, .ChannelWrapper-content::-webkit-scrollbar-thumb,
+.ChannelWrapper-content:hover::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-color) !important;
 }
 
