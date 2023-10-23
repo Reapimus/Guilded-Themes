@@ -1,0 +1,17 @@
+{
+    "id": "justananimetheme",
+    "name": "Just An Anime Theme",
+    "files": "theme.css",
+
+    "author": "m6YxwpQd",
+    "banner": "./banner.jpg",
+    "images": [
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/6f0cbf0b1ffa098a5e60d39060d82d7c-Full.webp?w=1758&h=851",
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/1539041b7b151bca582a12f09d93062f-Full.webp?w=310&h=748",
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/77bfdff7b2da29ea51e0b5df3e7f9702-Full.webp?w=1819&h=848",
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/c0ad841f1f69f33f3de65ad370201955-Full.webp?w=1818&h=850",
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/a227e7927bd529a8e88d8f320f99cc99-Full.webp?w=1816&h=841",
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/4658832c9ed05a3b0b4e656a9cfb64b1-Full.webp?w=1762&h=1007",
+        "https://img.guildedcdn.com/ContentMediaGenericFiles/e9dc754c372d3f8cc203c43fa4f7ca69-Full.webp?w=1693&h=680"
+    ]
+}
