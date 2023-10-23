@@ -44,7 +44,7 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 .ScreenHeader-container, .TeamOverviewBanner-container, .OptionsMenuPageWrapper-container .FormSection-container, .OptionsMenuPageWrapper-container .FormSection-row,
 .SettingsMenu-container .ItemManagerListItem-container, .SettingsMenu-container .ItemManagerHeader-container, .ReactionPickerFooter-container,
 .ForumThreads-container .DraftInputWithTitleV2-input, .TeamThreadReplyCreator-creator-image, .TeamThreadReplyCreator-placeholder,
-.ForumThreads-container .SlateToolbarStrip, .ForumThreads-container .SlateToolbarStrip-iconGroup {
+.Editor-container .SlateToolbarStrip, .Editor-container .SlateToolbarStrip-iconGroup {
     border: none !important;
 }
 
@@ -102,8 +102,14 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
     border-radius: 6px;
 }
 
+.ChatV2Message-container:not(.ChatV2Message-container-editing):hover, .ChatV2Message-container:not(.ChatV2Message-container-editing).ChatV2Message-container-mentioned,
+.ChatV2Message-container:not(.ChatV2Message-container-editing).ChatV2Message-container-replying,
+.ChatV2Message-container:not(.ChatV2Message-container-editing).ChatV2Message-container-private {
+    backdrop-filter: blur(6px);
+}
+
 .ChatChannelInput-editor .ContextMenuTrigger-container:after, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper:after,
-.NavV4Sidebar-shadow {
+.NavV4Sidebar-shadow, .ChatV2MessageContents-container .SlateInsertToolbar-container:after {
     display: none;
 }
 
@@ -112,8 +118,7 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 }
 
 .ChatChannelInput-editor, .ChatChannelInputStatusBar-container, .ForumThreads-container .DraftInputWithTitleV2-title-wrapper,
-.ForumThreads-container .TeamPostRow-container, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper,
-.ForumThreads-container .Editor-container {
+.ForumThreads-container .TeamPostRow-container, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper, .Editor-container {
     background-color: var(--message-box-transparency) !important;
     backdrop-filter: blur(6px);
 }
@@ -199,6 +204,6 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
     border-radius: 4px;
 }
 
-.NavV4TeamSelectorTeamList-container .NavV4SelectorRow-container:hover {
+.NavV4TeamSelectorTeamList-container .NavV4SelectorRow-container:hover, .TeamChannelItemContents-container-selected, .TeamChannelItemContents-container:hover {
     backdrop-filter: blur(6px);
 }
