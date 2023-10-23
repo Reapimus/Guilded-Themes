@@ -110,7 +110,7 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 }
 
 .ChatChannelInput-editor .ContextMenuTrigger-container:after, .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper:after,
-.NavV4Sidebar-shadow, .ChatV2MessageContents-container .SlateInsertToolbar-container:after {
+.NavV4Sidebar-shadow, .ChatV2MessageContents-container .SlateInsertToolbar-container:after, .TeamPageV2-container .DraftInputWithTitleV2-container:after {
     display: none;
 }
 
@@ -121,12 +121,17 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
 .ChatChannelInput-editor, .ChatChannelInputStatusBar-container, .ForumThreads-container .DraftInputWithTitleV2-title-wrapper,
 .TeamThread-content .TeamThreadReplyCreator-unexpanded-wrapper, .Editor-container, .TeamThreadPostPanelDisplay-container-reply,
 .TeamThreadPostPanelDisplay-container, .ForumThreads-container .TeamPostRow-container, .MediaDisplayItemV3-container,
-.ReplyPanel-container-viewing, .DocDisplayItem-container {
+.ReplyPanel-container-viewing, .DocDisplayItem-container, .TeamPageV2-container .DraftInputWithTitleV2-title-wrapper,
+.TeamOverviewContentSection-card {
     background-color: var(--message-box-transparency) !important;
     backdrop-filter: blur(6px);
 }
 
-.DocDisplayItem-container:after {
+.TeamPageV2-container .RichTextComposer-container {
+    backdrop-filter: blur(6px);
+}
+
+.DocDisplayItem-container:after, .TeamPageV2-container .DraftInputWithTitleV2-input {
     border: none;
 }
 
