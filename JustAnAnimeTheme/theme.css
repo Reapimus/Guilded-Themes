@@ -4,6 +4,15 @@ body, .SettingsOverlay-container, .MediaSplitView-right-pane, .ReactionPicker-co
     background-position: center !important;
 }
 
+.CreatePostControl-container .DraftInputWithTitleV2-title-wrapper, .UserProfilePostPanel-container {
+    background-color: var(--message-box-transparency) !important;
+    backdrop-filter: blur(6px);
+}
+
+.CreatePostControl-container .DraftInputWithTitleV2-container-with-icon .DraftInputWithTitleV2-input {
+    border: none !important;
+}
+
 .UpcomingCalendarEvent-container {
     border-radius: 4px;
     padding: 0 2px;
